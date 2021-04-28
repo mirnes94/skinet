@@ -1,0 +1,6 @@
+{
+    "vsintellicode.features.python.deepLearning": "enabled",
+    "editor.columnSelection": true,
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "editor.smoothScrolling": true
+}
