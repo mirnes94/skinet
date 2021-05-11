@@ -50,7 +50,7 @@ namespace API.Controllers
 
             return Ok(_mapper.Map<IReadOnlyList<Order>>(orders));
         }
-/*
+
         [HttpGet("{id}")]
         public async Task<ActionResult<OrderToReturnDto>> GetOrderByIdForUser(int id)
         {
@@ -62,7 +62,7 @@ namespace API.Controllers
 
             return _mapper.Map<OrderToReturnDto>(order);
         }
-    */
+    
     [HttpGet("{deliveryMethods}")]
     public async Task<ActionResult<IReadOnlyList<DeliveryMethod>>> GetDeliveryMethods(){
             return Ok(await _orderService.GetDeliveryMethodAsync());

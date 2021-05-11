@@ -12,9 +12,14 @@ export class AppComponent implements OnInit {
 
   title = 'Skinet';
  
-  constructor(){}
+  constructor(private http:HttpClient){}
 
   ngOnInit(): void {
-
+    this.http.get('https://localhost:5001/api/products?pageSize=50').subscribe((response:any)=>{
+      console.log(response);
+    },error=>{
+      console.log(error);
+    });
+    
   }
 }
